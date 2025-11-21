@@ -81,7 +81,7 @@ namespace CarWiki
         private int GetResponsiveColumnCount()
         {
             int availableWidth = Math.Max(1, tableLayoutPanel1.ClientSize.Width - SystemInformation.VerticalScrollBarWidth - tableLayoutPanel1.Padding.Horizontal);
-            int targetCardWidth = 360; // desired minimum per card including margins
+            int targetCardWidth = 360;
             int columns = Math.Max(1, Math.Min(3, availableWidth / targetCardWidth));
             return columns;
         }
